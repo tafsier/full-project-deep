@@ -1,0 +1,13 @@
+{
+  "name": "interactive-tutorial-app",
+  "version": "1.0.0",
+  "description": "تطبيق التعليم التفاعلي - شرح خطوة بخطوة لواجهات المواقع والبرامج",
+  "scripts": {
+    "start": "python app.py",
+    "install-py-deps": "pip install -r requirements.txt",
+    "setup": "npm run install-py-deps"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.1"
+  }
+}

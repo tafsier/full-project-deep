@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تعليمي - تطبيق التعليم التفاعلي</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-graduation-cap"></i> تطبيق التعليم التفاعلي</h1>
+            <p>تعلم استخدام أي موقع أو برنامج بسهولة مع خطوات تفاعلية ومرئية. ابحث عن التطبيق أو الموقع الذي تريد تعلمه واتبع الإرشادات خطوة بخطوة!</p >
+        </header>
+        
+        <div class="app-card">
+            <div class="search-section">
+                <h2><i class="fas fa-search"></i> ما الذي تريد تعلم استخدامه اليوم؟</h2>
+                <div class="search-container">
+                    <input type="text" id="app-search" placeholder="اكتب اسم الموقع أو البرنامج (مثال: جيت هب، يوتيوب، ووردبريس...)">
+                    <button id="search-btn"><i class="fas fa-play"></i> ابدأ التعلم</button>
+                </div>
+            </div>
+            
+            <div class="tutorial-section" id="tutorial-section">
+                <div class="app-display">
+                    <div class="app-mockup" id="app-mockup">
+                        <div class="pointer" id="step-pointer">
+                            <i class="fas fa-hand-point-up"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="instructions">
+                    <div class="step-header">
+                        <div class="step-title" id="step-title">إنشاء مستودع جديد على جيت هب</div>
+                        <div class="step-count">الخطوة <span id="current-step">1</span> من <span id="total-steps">3</span></div>
+                    </div>
+                    
+                    <div class="step-description" id="step-description">
+                        اضغط على علامة (+) في الزاوية العلوية اليمنى واختر "مستودع جديد" من القائمة المنسدلة.
+                    </div>
+                    
+                    <div class="step-navigation">
+                        <button class="nav-btn prev-btn" id="prev-btn">
+                            <i class="fas fa-arrow-right"></i> السابق
+                        </button>
+                        <button class="nav-btn next-btn" id="next-btn">
+                            التالي <i class="fas fa-arrow-left"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="app-options" id="app-options">
+                <!-- سيتم ملؤه ديناميكيًا -->
+            </div>
+        </div>
+        
+        <div class="feature-section">
+            <h2 class="section-title">مميزات تطبيق التعليم التفاعلي</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mouse-pointer"></i>
+                    </div>
+                    <h3 class="feature-title">إرشادات مرئية</h3>
+                    <p class="feature-desc">إشارات واضحة على الشاشة تبين بالضبط مكان النقر أو الإجراء المطلوب</p >
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-list-ol"></i>
+                    </div>
+                    <h3 class="feature-title">خطوات متسلسلة</h3>
+                    <p class="feature-desc">إرشادات خطوة بخطوة مع شرح واضح لكل إجراء وماذا يحدث بعده</p >
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3 class="feature-title">محاكاة واقعية</h3>
+                    <p class="feature-desc">عرض واجهات حقيقية للمواقع والبرامج كما تظهر للمستخدم</p >
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="feature-title">تعلم سريع</h3>
+                    <p class="feature-desc">إتقان استخدام التطبيقات المعقدة في وقت قصير بسهولة</p >
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>تم تطوير هذا المشروع باستخدام Flask, Selenium, و JavaScript</p >
+        <p>للاستفادة من الذكاء الاصطناعي يمكن دمج واجهة برمجة تطبيقات مثل Gemini أو OpenAI</p >
+        <p><i class="fab fa-github"></i> عرض الكود المصدري على GitHub</p >
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
